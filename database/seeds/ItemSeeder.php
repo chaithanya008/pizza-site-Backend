@@ -25,7 +25,7 @@ class ItemSeeder extends Seeder
             [
                 'id' => 2, 
                 'name' => 'Farmhouse',
-                'description' => 'Delightful combination of onion, capsicum, tomato & grilled mushroom',
+                'description' => 'Delightful combination of onion, capsicum, tomato & mushroom',
                 'price_eur' => 4.76,
                 'price_usd' => 5.23,
                 'img_url' => 'images/farmhouse.png', 
@@ -70,7 +70,7 @@ class ItemSeeder extends Seeder
             [
                 'id' => 7, 
                 'name' => 'Veg Extravaganza',
-                'description' => 'Black olives, capsicum, onion, grilled mushroom, corn, tomato, jalapeno & extra cheese',
+                'description' => 'Black olives, capsicum, onion, grilled mushroom, corn, tomato, jalapeno & cheese',
                 'price_eur' => 2.98,
                 'price_usd' => 3.27,
                 'img_url' => 'images/new_veg_extravaganza.jpg', 
@@ -114,7 +114,7 @@ class ItemSeeder extends Seeder
             ],
             [
                 'id' => 12, 
-                'name' => 'White Pasta Italiano Veg',
+                'name' => 'White Veg Pasta',
                 'description' => null,
                 'price_eur' => 1.63,
                 'price_usd' => 1.79,

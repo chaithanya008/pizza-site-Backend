@@ -12,19 +12,24 @@ class OrderController extends Controller
 
     public function placeOrder(Request $request)
     {
+        // Throw an error if order value not exists in request
         if (!$request->has('order')) {
             return response()->json(['message' => 'Please select some item(s) to order'], 422);
         }
 
-        $input = $request->all();
-        $orders = json_decode($input['order']);
+        $input = $request->all(); // Get all input values
+        $orders = json_decode($input['order']); // Extract order data and convert to object
 
+        // Extracting ids to query database for item details
         $ids = [];
         foreach($orders as $item) {
             $ids[] = $item->id;
         }
 
+        // Query data with item ids
         $allItems = Item::whereIn('id', $ids)->get(['id', 'price_eur', 'price_usd']);
+
+        // If menu item not found with item ids then throw error
         if (count($allItems) == 0) {
             return response()->json(['message' => 'Please select some item(s) to order'], 422);
         }
@@ -49,9 +54,10 @@ class OrderController extends Controller
         $priceEur = 0;
         $priceUsd = 0;
         foreach($orders as $order) {
-            $orderPriceEur = $orderPrice[$order->id]['price_eur'] * $order->qty;
-            $orderPriceUsd = $orderPrice[$order->id]['price_usd'] * $order->qty;
+            $orderPriceEur = $orderPrice[$order->id]['price_eur'] * $order->qty; // Sum of EUR * quantity
+            $orderPriceUsd = $orderPrice[$order->id]['price_usd'] * $order->qty; // Sum of USD * quantity
 
+            // Prepare order item details
             OrderItem::create([
                 'order_id' => $newOrder->id,
                 'item_id' => $order->id,
@@ -62,8 +68,8 @@ class OrderController extends Controller
                 'total_price_usd' => $orderPriceUsd,
             ]);
 
-            $priceEur += $orderPriceEur;
-            $priceUsd += $orderPriceUsd;
+            $priceEur += $orderPriceEur; // Total sum of price in EUR
+            $priceUsd += $orderPriceUsd; // Total sum of price in USD
         }
 
         // Update final price in Order table
@@ -78,18 +84,22 @@ class OrderController extends Controller
     }
     
     public function trackOrder(Request $request) {
+        // Throw an error if order or contact not exists in request
         if (!$request->has('order') || !$request->has('contact')) {
             return response()->json(['message' => 'Order no or contact number can\'t be empty'], 422);
         }
 
-        $input = $request->all();
+        $input = $request->all(); // Fetch all input values
 
         try {
+            // Querying database for order
             $order = Order::where(['id' => $input['order'], 'contact' => $input['contact']])->first();
             return response()->json([
                 'message' => 'Success',
                 'data' => $order // Show order information to user
             ]);
+
+            // Throw an error if order not found
         } catch(\Exception $e) {
             return response()->json(['message' => 'Order not found'], 404);
         }
