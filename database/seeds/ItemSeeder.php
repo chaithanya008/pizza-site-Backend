@@ -157,6 +157,42 @@ class ItemSeeder extends Seeder
                 'img_url' => 'images/updated_paneer_makhani.jpg', 
                 'type_id' => 1
             ],
+            [
+                'id' => 17, 
+                'name' => 'Lipton Ice Tea (250ml)',
+                'description' => null,
+                'price_eur' => 1.23,
+                'price_usd' => 1.34,
+                'img_url' => 'images/lit.jpg',
+                'type_id' => 2
+            ],
+            [
+                'id' => 18, 
+                'name' => 'Cheesy Jalapeno Dip',
+                'description' => null,
+                'price_eur' => 1.76,
+                'price_usd' => 1.92,
+                'img_url' => 'images/new_jalapeno.png', 
+                'type_id' => 2
+            ],
+            [
+                'id' => 19, 
+                'name' => 'Crunchy Strips',
+                'description' => null,
+                'price_eur' => 1.45,
+                'price_usd' => 1.58,
+                'img_url' => 'images/crunchy_strips.png', 
+                'type_id' => 2
+            ],
+            [
+                'id' => 20, 
+                'name' => 'Garlic Breadsticks',
+                'description' => null,
+                'price_eur' => 1.92,
+                'price_usd' => 2.09,
+                'img_url' => 'images/Garlic_bread.png', 
+                'type_id' => 2
+            ],
         ]);
 
 
