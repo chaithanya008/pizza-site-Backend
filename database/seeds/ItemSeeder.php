@@ -114,13 +114,49 @@ class ItemSeeder extends Seeder
             ],
             [
                 'id' => 12, 
-                'name' => 'White Veg Pasta',
+                'name' => 'Brownie Fantasy',
                 'description' => null,
                 'price_eur' => 1.63,
                 'price_usd' => 1.79,
-                'img_url' => 'images/White-Pasta_Veg.png', 
+                'img_url' => 'images/Brownie_Fantasy.png', 
                 'type_id' => 2
-            ]
+            ],
+            [
+                'id' => 13, 
+                'name' => 'Achari Do Pyaza',
+                'description' => 'Tangy & spicy achari flavours on a super cheesy onion pizza- as desi as it gets!',
+                'price_eur' => 3.69,
+                'price_usd' => 4.02,
+                'img_url' => 'images/updated_achari_do_pyaza.jpg', 
+                'type_id' => 1
+            ],
+            [
+                'id' => 14, 
+                'name' => 'Double Cheese Margherita',
+                'description' => 'A classic delight loaded with extra 100% real mozzarella cheese',
+                'price_eur' => 4.05,
+                'price_usd' => 4.41,
+                'img_url' => 'images/double_cheese_margherita_2502.jpg', 
+                'type_id' => 1
+            ],
+            [
+                'id' => 15, 
+                'name' => 'Fresh Veggie',
+                'description' => 'Delectable combination of onion & capsicum, a veggie lovers pick',
+                'price_eur' => 3.93,
+                'price_usd' => 4.28,
+                'img_url' => 'images/new_fresh_veggie.jpg', 
+                'type_id' => 1
+            ],
+            [
+                'id' => 16, 
+                'name' => 'Paneer Makhani',
+                'description' => 'Flavorful twist of spicy makhani sauce topped with paneer & capsicum',
+                'price_eur' => 4.78,
+                'price_usd' => 5.21,
+                'img_url' => 'images/updated_paneer_makhani.jpg', 
+                'type_id' => 1
+            ],
         ]);
 
 
