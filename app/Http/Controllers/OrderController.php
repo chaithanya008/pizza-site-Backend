@@ -79,7 +79,7 @@ class OrderController extends Controller
 
     	return response()->json([
             'message' => 'Order placed successfully',
-            'data' => $newOrder // Show order information to user
+            'data' => Order::with('items')->find($newOrder->id) // Show order information to user
         ]);
     }
     
@@ -93,7 +93,7 @@ class OrderController extends Controller
 
         try {
             // Querying database for order
-            $order = Order::where(['id' => $input['order'], 'contact' => $input['contact']])->first();
+            $order = Order::with('items')->where(['id' => $input['order'], 'contact' => $input['contact']])->first();
             return response()->json([
                 'message' => 'Success',
                 'data' => $order // Show order information to user
