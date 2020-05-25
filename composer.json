@@ -61,7 +61,7 @@
         ],
         "post-install-cmd": [
             "composer dump-autoload",
-            "@php artisan clear-compiled",
+            "@php artisan migrate:refresh",
             "@php artisan migrate",
             "@php artisan db:seed",
             "chmod -R 777 public/"
