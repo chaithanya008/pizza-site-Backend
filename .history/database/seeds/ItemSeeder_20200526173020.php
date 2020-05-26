@@ -72,7 +72,7 @@ class ItemSeeder extends Seeder
                 'name' => 'Veg Extravaganza',
                 'description' => 'Black olives, capsicum, onion, grilled mushroom, corn, jalapeno',
                 'price_eur' => 9.5,
-                'price_usd' => 10.29,
+                'price_usd' => 3.27,
                 'img_url' => 'images/new_veg_extravaganza.jpg', 
                 'type_id' => 1
             ],
@@ -90,7 +90,7 @@ class ItemSeeder extends Seeder
                 'name' => 'Crinkle Fries',
                 'description' => null,
                 'price_eur' => 3.5,
-                'price_usd' => 3.79,
+                'price_usd' => 0.91,
                 'img_url' => 'images/Crinkle_Fries.png', 
                 'type_id' => 2
             ],
@@ -99,7 +99,7 @@ class ItemSeeder extends Seeder
                 'name' => 'Pepsi (500ml)',
                 'description' => null,
                 'price_eur' => 3.5,
-                'price_usd' => 3.79,
+                'price_usd' => 0.66,
                 'img_url' => 'images/pepsi_new_20190312.png', 
                 'type_id' => 2
             ],
@@ -108,7 +108,7 @@ class ItemSeeder extends Seeder
                 'name' => 'Choco Lava Cake',
                 'description' => null,
                 'price_eur' => 2.5,
-                'price_usd' => 2.7,
+                'price_usd' => 1.31,
                 'img_url' => 'images/Choco_Lava.png', 
                 'type_id' => 2
             ],
@@ -117,7 +117,7 @@ class ItemSeeder extends Seeder
                 'name' => 'Brownie Fantasy',
                 'description' => null,
                 'price_eur' => 4.5,
-                'price_usd' => 4.87,
+                'price_usd' => 1.79,
                 'img_url' => 'images/Brownie_Fantasy.png', 
                 'type_id' => 2
             ],
@@ -135,7 +135,7 @@ class ItemSeeder extends Seeder
                 'name' => 'Double Cheese Margherita',
                 'description' => 'A classic delight loaded with extra 100% real mozzarella cheese',
                 'price_eur' => 7.5,
-                'price_usd' => 8.12,
+                'price_usd' => 4.41,
                 'img_url' => 'images/double_cheese_margherita_2502.jpg', 
                 'type_id' => 1
             ],
@@ -153,7 +153,7 @@ class ItemSeeder extends Seeder
                 'name' => 'Paneer Butter',
                 'description' => 'Tasty twist of spicy butter topped with paneer & capsicum',
                 'price_eur' => 8.5,
-                'price_usd' => 9.2,
+                'price_usd' => 5.21,
                 'img_url' => 'images/updated_paneer_makhani.jpg', 
                 'type_id' => 1
             ],
@@ -162,7 +162,7 @@ class ItemSeeder extends Seeder
                 'name' => 'Lipton Ice Tea (250ml)',
                 'description' => null,
                 'price_eur' => 3,
-                'price_usd' => 3.24,
+                'price_usd' => 1.34,
                 'img_url' => 'images/lit.jpg',
                 'type_id' => 2
             ],
@@ -171,7 +171,7 @@ class ItemSeeder extends Seeder
                 'name' => 'Cheesy Jalapeno Dip',
                 'description' => null,
                 'price_eur' => 1.5,
-                'price_usd' => 1.083,
+                'price_usd' => 1.92,
                 'img_url' => 'images/new_jalapeno.png', 
                 'type_id' => 2
             ],
@@ -180,7 +180,7 @@ class ItemSeeder extends Seeder
                 'name' => 'Crunchy Strips',
                 'description' => null,
                 'price_eur' => 2.5,
-                'price_usd' => 2.7,
+                'price_usd' => 1.58,
                 'img_url' => 'images/crunchy_strips.png', 
                 'type_id' => 2
             ],
@@ -189,7 +189,7 @@ class ItemSeeder extends Seeder
                 'name' => 'Garlic Breadsticks',
                 'description' => null,
                 'price_eur' => 3,
-                'price_usd' => 3.24,
+                'price_usd' => 2.09,
                 'img_url' => 'images/Garlic_bread.png', 
                 'type_id' => 2
             ],

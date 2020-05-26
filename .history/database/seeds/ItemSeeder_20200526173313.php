@@ -117,7 +117,7 @@ class ItemSeeder extends Seeder
                 'name' => 'Brownie Fantasy',
                 'description' => null,
                 'price_eur' => 4.5,
-                'price_usd' => 4.87,
+                'price_usd' => ,
                 'img_url' => 'images/Brownie_Fantasy.png', 
                 'type_id' => 2
             ],
@@ -135,7 +135,7 @@ class ItemSeeder extends Seeder
                 'name' => 'Double Cheese Margherita',
                 'description' => 'A classic delight loaded with extra 100% real mozzarella cheese',
                 'price_eur' => 7.5,
-                'price_usd' => 8.12,
+                'price_usd' => 4.41,
                 'img_url' => 'images/double_cheese_margherita_2502.jpg', 
                 'type_id' => 1
             ],
