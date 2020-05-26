@@ -87,7 +87,7 @@ class ItemSeeder extends Seeder
             ],
             [
                 'id' => 9, 
-                'name' => 'Crinkle Fries',
+                'name' => 'Pommes Fries',
                 'description' => null,
                 'price_eur' => 3.5,
                 'price_usd' => 3.79,

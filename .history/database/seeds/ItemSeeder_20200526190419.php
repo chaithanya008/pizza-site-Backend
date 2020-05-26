@@ -70,7 +70,7 @@ class ItemSeeder extends Seeder
             [
                 'id' => 7, 
                 'name' => 'Veg Extravaganza',
-                'description' => 'Olives, capsicum, onion, grilled mushroom, jalapeno',
+                'description' => 'Black olives, capsicum, onion, grilled mushroom, corn, jalapeno',
                 'price_eur' => 9.5,
                 'price_usd' => 10.29,
                 'img_url' => 'images/new_veg_extravaganza.jpg', 
@@ -132,8 +132,8 @@ class ItemSeeder extends Seeder
             ],
             [
                 'id' => 14, 
-                'name' => 'Margherita Double',
-                'description' => 'A classic delight loaded with extra 100% real mozzarella cheese',
+                'name' => 'Double Cheese Margherita',
+                'description' => 'A classic delight loaded with extra cheese',
                 'price_eur' => 7.5,
                 'price_usd' => 8.12,
                 'img_url' => 'images/double_cheese_margherita_2502.jpg', 

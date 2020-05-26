@@ -70,7 +70,7 @@ class ItemSeeder extends Seeder
             [
                 'id' => 7, 
                 'name' => 'Veg Extravaganza',
-                'description' => 'Olives, capsicum, onion, grilled mushroom, jalapeno',
+                'description' => 'Black olives, capsicum, onion, grilled mushroom, jalapeno',
                 'price_eur' => 9.5,
                 'price_usd' => 10.29,
                 'img_url' => 'images/new_veg_extravaganza.jpg', 
