@@ -22,10 +22,15 @@
 2. Clone repository from GitHub and go to project root `/`
 3. Install Laravel packages `composer install`
 4. Copy `.env.example` file to `.env` and change database credentials into `.env` file.
-5. Follow bellow commands to setup and run Laravel application 
+5. To run locally, install [Xampp](https://www.apachefriends.org/download.html) . Change siteURL in src\environments\environment.ts.
+   Start Mysql and Apache server.
+6. Follow bellow commands to setup and run Laravel application 
 	`php artisan key:generate` # Generate app key
+    
 	`php artisan migrate` # Migrate DB tables
+    
 	`php artisan db:seed` # Seeding dummy data
+    
 	`php artisan serve` # Run your application
 
 ##### PHP Unit testing
