@@ -43,7 +43,7 @@ class ItemSeeder extends Seeder
             [
                 'id' => 4, 
                 'name' => 'Pepper BBQ',
-                'description' => 'Pepper barbecue chicken for that extra zing',
+                'description' => 'Pepper barbecue chicken with extra zing',
                 'price_eur' => 7.5,
                 'price_usd' => 8.12,
                 'img_url' => 'images/new_pepper_barbeque_chicken.jpg', 
